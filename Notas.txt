@@ -1,0 +1,3 @@
+Para Scafolding CAPA DOMinio
+
+PM> Scaffold-DbContext "Server=DCODE;Database=POS; Encrypt=False; Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Entities
