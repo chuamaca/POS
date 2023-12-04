@@ -1,4 +1,4 @@
-﻿using POS.Infraestructure.Commons.Bases;
+﻿using POS.Infraestructure.Commons.Bases.Request;
 using System;
 using System.Collections.Generic;
 using System.Linq;

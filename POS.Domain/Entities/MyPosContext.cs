@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace POS.Domain.Entities;
 
-public partial class PosContext : DbContext
+public partial class MyPosContext : DbContext
 {
-    public PosContext()
+    public MyPosContext()
     {
     }
 
-    public PosContext(DbContextOptions<PosContext> options)
+    public MyPosContext(DbContextOptions<MyPosContext> options)
         : base(options)
     {
     }
