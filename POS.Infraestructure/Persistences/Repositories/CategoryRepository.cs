@@ -115,6 +115,9 @@ namespace POS.Infraestructure.Persistences.Repositories
             return recordsAfected > 0;
         }
 
-
+        public Task<bool> EditCategory(Category category)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

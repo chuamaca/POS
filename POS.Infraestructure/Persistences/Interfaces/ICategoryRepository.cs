@@ -20,6 +20,6 @@ namespace POS.Infraestructure.Persistences.Interfaces
         Task<bool> RegisterCategory(Category category);
         Task<bool> UpdateCategory(Category category);
         Task<bool> RemoveCategory(int categoryId);
-
+       
     }
 }

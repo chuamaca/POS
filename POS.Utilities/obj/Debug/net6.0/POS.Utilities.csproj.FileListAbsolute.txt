@@ -1,0 +1,12 @@
+D:\WS Per\POS\POS.Utilities\bin\Debug\net6.0\POS.Utilities.deps.json
+D:\WS Per\POS\POS.Utilities\bin\Debug\net6.0\POS.Utilities.dll
+D:\WS Per\POS\POS.Utilities\bin\Debug\net6.0\POS.Utilities.pdb
+D:\WS Per\POS\POS.Utilities\obj\Debug\net6.0\POS.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\WS Per\POS\POS.Utilities\obj\Debug\net6.0\POS.Utilities.AssemblyInfoInputs.cache
+D:\WS Per\POS\POS.Utilities\obj\Debug\net6.0\POS.Utilities.AssemblyInfo.cs
+D:\WS Per\POS\POS.Utilities\obj\Debug\net6.0\POS.Utilities.csproj.CoreCompileInputs.cache
+D:\WS Per\POS\POS.Utilities\obj\Debug\net6.0\POS.Utilities.sourcelink.json
+D:\WS Per\POS\POS.Utilities\obj\Debug\net6.0\POS.Utilities.dll
+D:\WS Per\POS\POS.Utilities\obj\Debug\net6.0\refint\POS.Utilities.dll
+D:\WS Per\POS\POS.Utilities\obj\Debug\net6.0\POS.Utilities.pdb
+D:\WS Per\POS\POS.Utilities\obj\Debug\net6.0\ref\POS.Utilities.dll
