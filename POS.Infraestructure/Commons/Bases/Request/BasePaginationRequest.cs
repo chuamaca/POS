@@ -11,7 +11,11 @@
         public int Records
         {
             get => NumRecordsPage;
-            set => NumRecordsPage = value > NumMaxRecordsPage ? NumMaxRecordsPage : value;
+            //set => NumRecordsPage = value > NumMaxRecordsPage ? NumMaxRecordsPage : value;
+            set
+            {
+                NumRecordsPage = value > NumMaxRecordsPage ? NumMaxRecordsPage : value;
+            }
         }
 
     }

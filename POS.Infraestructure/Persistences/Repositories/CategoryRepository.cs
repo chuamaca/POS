@@ -45,9 +45,9 @@ namespace POS.Infraestructure.Persistences.Repositories
                 }
             }
 
-            if (filters.stateFilter is not null)
+            if (filters.StateFilter is not null)
             {
-                listCategories = listCategories.Where(x => x.State.Equals(filters.stateFilter));
+                listCategories = listCategories.Where(x => x.State.Equals(filters.StateFilter));
             }
 
             if (!string.IsNullOrEmpty(filters.StartDate) && !string.IsNullOrEmpty(filters.EndDate))
@@ -60,6 +60,7 @@ namespace POS.Infraestructure.Persistences.Repositories
             if (filters.Sort is null) filters.Sort = "CategoryId";
 
             response.TotalRecords = await listCategories.CountAsync();
+
             response.Items = await Ordering(filters, listCategories,!(bool)filters.Download!).ToListAsync();
             return response;
 

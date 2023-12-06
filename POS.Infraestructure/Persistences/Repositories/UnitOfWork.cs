@@ -1,10 +1,6 @@
-﻿using POS.Infraestructure.Persistences.Context;
+﻿using POS.Domain.Entities;
+using POS.Infraestructure.Persistences.Context;
 using POS.Infraestructure.Persistences.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace POS.Infraestructure.Persistences.Repositories
 {

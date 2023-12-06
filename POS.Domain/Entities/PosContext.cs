@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace POS.Domain.Entities;
 
-public partial class MyPosContext : DbContext
+public partial class PosContext : DbContext
 {
-    public MyPosContext()
+    public PosContext()
     {
     }
 
-    public MyPosContext(DbContextOptions<MyPosContext> options)
+    public PosContext(DbContextOptions<PosContext> options)
         : base(options)
     {
     }
@@ -57,7 +57,7 @@ public partial class MyPosContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=DCODE;Database=POS; Encrypt=False; Trusted_Connection=True;");
+        => optionsBuilder.UseSqlServer("Server=HRNBK00963\\SQLEXPRESS;Database=POS; Encrypt=False; Trusted_Connection=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

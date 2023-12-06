@@ -34,6 +34,7 @@ namespace POS.Application.Services
         {
             //Obtenemos Base Response
             var response = new BaseResponse<BaseEntityResponse<CategoryResponseDTO>>();
+
             var categories = await _unitOfWork.Category.ListCategories(filters);
             if (categories is not null)
             {
@@ -120,7 +121,7 @@ namespace POS.Application.Services
 
 
 
-        public async Task<BaseResponse<bool>> EditCategory(int categoryId, CategoryRequestDTO requestDTO)
+        public async Task<BaseResponse<bool>> UpdateCategory(int categoryId, CategoryRequestDTO requestDTO)
         {
 
             var response = new BaseResponse<bool>();

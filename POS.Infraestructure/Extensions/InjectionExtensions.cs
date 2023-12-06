@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using POS.Domain.Entities;
 using POS.Infraestructure.Persistences.Context;
 using POS.Infraestructure.Persistences.Interfaces;
 using POS.Infraestructure.Persistences.Repositories;

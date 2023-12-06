@@ -19,7 +19,7 @@ namespace POS.Application.Interfaces
         Task<BaseResponse<CategoryResponseDTO>> CategoriesById(int categoryId);
         Task<BaseResponse<bool>> RegisterCategory(CategoryRequestDTO requestDto);
 
-        Task<BaseResponse<bool>> EditCategory(int categoryId, CategoryRequestDTO requestDTO);
+        Task<BaseResponse<bool>> UpdateCategory(int categoryId, CategoryRequestDTO requestDTO);
 
         Task<BaseResponse<bool>> RemoveCategory(int categoryID);
     }

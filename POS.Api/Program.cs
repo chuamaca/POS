@@ -1,3 +1,4 @@
+using POS.Application.Extensions;
 using POS.Infraestructure.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 builder.Services.AddInjectionInfraestructure(configuration);
 // Configuracion para Injeccion de Dependecnia ==== FIN
+builder.Services.AddInjectionApplication(configuration);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
