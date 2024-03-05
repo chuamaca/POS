@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace POS.Application.Mappers
 {
-    public class CategoryMappingProfile :Profile
+    public class CategoryMappingProfile : Profile
     {
         public CategoryMappingProfile()
         {
