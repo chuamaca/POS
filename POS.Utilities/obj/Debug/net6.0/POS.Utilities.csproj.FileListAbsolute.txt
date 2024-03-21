@@ -10,3 +10,15 @@ D:\WS Per\POS\POS.Utilities\obj\Debug\net6.0\POS.Utilities.dll
 D:\WS Per\POS\POS.Utilities\obj\Debug\net6.0\refint\POS.Utilities.dll
 D:\WS Per\POS\POS.Utilities\obj\Debug\net6.0\POS.Utilities.pdb
 D:\WS Per\POS\POS.Utilities\obj\Debug\net6.0\ref\POS.Utilities.dll
+C:\WS PER\POS\POS.Utilities\bin\Debug\net6.0\POS.Utilities.deps.json
+C:\WS PER\POS\POS.Utilities\bin\Debug\net6.0\POS.Utilities.dll
+C:\WS PER\POS\POS.Utilities\bin\Debug\net6.0\POS.Utilities.pdb
+C:\WS PER\POS\POS.Utilities\obj\Debug\net6.0\POS.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\WS PER\POS\POS.Utilities\obj\Debug\net6.0\POS.Utilities.AssemblyInfoInputs.cache
+C:\WS PER\POS\POS.Utilities\obj\Debug\net6.0\POS.Utilities.AssemblyInfo.cs
+C:\WS PER\POS\POS.Utilities\obj\Debug\net6.0\POS.Utilities.csproj.CoreCompileInputs.cache
+C:\WS PER\POS\POS.Utilities\obj\Debug\net6.0\POS.Utilities.sourcelink.json
+C:\WS PER\POS\POS.Utilities\obj\Debug\net6.0\POS.Utilities.dll
+C:\WS PER\POS\POS.Utilities\obj\Debug\net6.0\refint\POS.Utilities.dll
+C:\WS PER\POS\POS.Utilities\obj\Debug\net6.0\POS.Utilities.pdb
+C:\WS PER\POS\POS.Utilities\obj\Debug\net6.0\ref\POS.Utilities.dll

@@ -24,7 +24,7 @@ namespace POS.Infraestructure.Persistences.Repositories
             _context.SaveChanges();
         }
 
-        public async Task saveChangesAsync()
+        public async Task SaveChangesAsync()
         {
             await _context.SaveChangesAsync();
         }

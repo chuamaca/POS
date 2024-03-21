@@ -19,6 +19,7 @@ namespace POS.Infraestructure.Extensions
                 );
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
             return services;
         }

@@ -57,7 +57,7 @@ public partial class PosContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=HRNBK00963\\SQLEXPRESS;Database=POS; Encrypt=False; Trusted_Connection=True;");
+        => optionsBuilder.UseSqlServer("Server=DESKTOP-ULG9N1G\\SQLEXPRESS;Database=POS; Encrypt=False; Trusted_Connection=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -128,7 +128,7 @@ public partial class PosContext : DbContext
 
         modelBuilder.Entity<Category>(entity =>
         {
-            entity.HasKey(e => e.CategoryId).HasName("PK__Categori__19093A0BE54103B6");
+            entity.HasKey(e => e.Id).HasName("PK__Categori__19093A0BE54103B6");
 
             entity.Property(e => e.Name).HasMaxLength(100);
         });

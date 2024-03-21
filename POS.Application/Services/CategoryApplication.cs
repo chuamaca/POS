@@ -56,7 +56,7 @@ namespace POS.Application.Services
         public async Task<BaseResponse<IEnumerable<CategorySelectResponseDTO>>> ListSelectCategories()
         {
             var response = new BaseResponse<IEnumerable<CategorySelectResponseDTO>>();
-            var categories= await _unitOfWork.Category.ListSelectCategories();
+            var categories = await _unitOfWork.Category.GetAllAsync();
             if (categories is not null)
             {
                 response.IsSuccess = true;
@@ -84,7 +84,7 @@ namespace POS.Application.Services
             }
 
             var category = _mapper.Map<Category>(requestDto);
-            response.Data = await _unitOfWork.Category.RegisterCategory(category);
+            response.Data = await _unitOfWork.Category.RegisterAsync(category);
             if (response.Data)
             {
                 response.IsSuccess = true;
@@ -103,7 +103,7 @@ namespace POS.Application.Services
         {
 
             var response = new BaseResponse<CategoryResponseDTO>();
-            var categories = await _unitOfWork.Category.CategoryById(categoryId);
+            var categories = await _unitOfWork.Category.GetByIdAsync(categoryId);
             if (categories is not null)
             {
                 response.IsSuccess = true;
@@ -133,9 +133,9 @@ namespace POS.Application.Services
             }
 
             var category= _mapper.Map<Category>(requestDTO);
-            category.CategoryId = categoryId;
+            category.Id = categoryId;
 
-            response.Data = await _unitOfWork.Category.UpdateCategory(category);
+            response.Data = await _unitOfWork.Category.EditAsync(category);
             if (response.Data)
             {
                 response.IsSuccess = true;
@@ -161,7 +161,7 @@ namespace POS.Application.Services
                 response.IsSuccess=false;
                 response.Message = ReplyMessage.MESSAGE_QUERY_EMPY;
             }
-            response.Data = await _unitOfWork.Category.RemoveCategory(categoryID);
+            response.Data = await _unitOfWork.Category.RemoveAsync(categoryID);
 
             if (response.Data)
             {

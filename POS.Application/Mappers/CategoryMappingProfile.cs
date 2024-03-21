@@ -12,11 +12,13 @@ using System.Threading.Tasks;
 
 namespace POS.Application.Mappers
 {
-    public class CategoryMappingProfile :Profile
+    public class CategoryMappingProfile : Profile
     {
         public CategoryMappingProfile()
         {
+
             CreateMap<Category, CategoryResponseDTO>()
+                .ForMember(x => x.CategoryId, x=> x.MapFrom(y=> y.Id))
                 .ForMember(x => x.StateCategory, x => x.MapFrom(y => y.State.Equals((int)StateTypes.Active) ? "Activo" : "Inactivo"))
                 .ReverseMap();
 
@@ -26,6 +28,7 @@ namespace POS.Application.Mappers
             CreateMap<CategoryRequestDTO, Category>();
 
             CreateMap<Category, CategorySelectResponseDTO>()
+                .ForMember(x=> x.CategoryID, x=> x.MapFrom(y=> y.Id))
                 .ReverseMap();
         }
     }
