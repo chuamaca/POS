@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "twWZ1TMvDgcl1yVAdnkxHLGT/I6Qvu+zWuUhaTm/oRNnf866TjffGFcxy0L5vGijzKlHuf6QROFrwjUhhS3pMw==",
+  "dgSpecHash": "VIlwNc2BUyQ=",
   "success": true,
-  "projectFilePath": "C:\\WS PER\\POS\\POS.Utilities\\POS.Utilities.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512"
-  ],
-  "logs": []
+  "projectFilePath": "D:\\POS\\POS.Utilities\\POS.Utilities.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Está ejecutando la operación \"restore\" con un origen \"HTTP\", \"http://packages.nuget.org/\". El acceso que no sea HTTPS se quitará en una versión futura. Considere la posibilidad de migrar a un origen \"HTTPS\"."
+    }
+  ]
 }

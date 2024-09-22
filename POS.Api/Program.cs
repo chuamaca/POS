@@ -3,6 +3,8 @@ using POS.Infraestructure.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var Cors = "MyCorsPolicy";
+
 
 // Add services to the container.
 // Configuracion para Injeccion de Dependecnia ==== INICIO
@@ -16,7 +18,25 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: Cors, builder =>
+    {
+        //builder.AllowAnyOrigin(); 
+        //builder.AllowAnyMethod();
+        //builder.AllowAnyHeader();
+
+        builder.WithOrigins("*")  // Asegúrate de agregar el puerto del frontend
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+
+
 var app = builder.Build();
+
+app.UseCors(Cors);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
